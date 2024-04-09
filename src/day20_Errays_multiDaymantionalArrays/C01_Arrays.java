@@ -22,5 +22,6 @@ public class C01_Arrays {
             }
 
         }
+        System.out.println("");
     }
 }
