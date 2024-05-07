@@ -3,34 +3,45 @@ package Day03_scanner_dataCasting;
 public class Co4_ExplicitNarrowing {
     public static void main(String[] args) {
 
-       int sayi1=20;
-       int sayi2=130;
-       int sayi3=140;
-       int sayi4=250;
-       int sayi5=520;
-       int sayi6=780;
-       double dbl=24.5;
+        int sayi1 = 24;
+        int sayi2 = 8;
+        int sayi3 = 10;
 
-       int sayi=(int)dbl;
-        System.out.println("24.5 integer'a cast edersek:"+sayi);
+        System.out.println( sayi1 / sayi2 ); // 3
 
-        byte byt=(byte) sayi1;
-        System.out.println("20'yi byt'e cast edersek:"+byt);
+        System.out.println( sayi1 / sayi3 ); // 24 / 10 ==> 2.4 ==> 2
 
-        byt=(byte) sayi2;
-        System.out.println("130'u byt'a cast edersek:"+byt);
+        // isleme giren sayilarin ikisi de int oldugundan,
+        // Java sonucu da int olarak verir.
 
-        byt=(byte) sayi3;
-        System.out.println("140'u byt'a cast edersek:"+byt);
 
-        byt=(byte) sayi4;
-        System.out.println("250'u byt'a cast edersek:"+byt);
+        double dbl = 24;
 
-        byt=(byte) sayi5;
-        System.out.println("520'yi byt'a cast edersek:"+byt);
+        System.out.println( dbl / sayi2 ); // 24.0 / 8 ==> 3.0
 
-        byt=(byte) sayi6;
-        System.out.println("780'u byt'a cast edersek:"+byt);
+        System.out.println(  dbl / sayi3 ); // 24.0 / 10 ==> 2.4
+
+
+
+        int a = 27;
+        int b = 4;
+
+        // a/b'yi ondalikli olarak yazdirin
+
+
+        // direk bolsek
+        System.out.println( a / b); // 27 / 4 ==> 6.75 ==> 6
+
+        // bolme isleminin sonucunu double variable'a atasak
+        double sonuc = a / b ;
+
+        System.out.println(sonuc); // 6.0
+
+
+        // sayilardan birini double'a cast edelim
+
+        sonuc = (double)a / b ;
+        System.out.println(sonuc); // 6.75
 
 
 

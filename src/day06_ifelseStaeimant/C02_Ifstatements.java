@@ -17,18 +17,26 @@ public class C02_Ifstatements {
          */
 
 
-        int a=18;
-        int b=47;
-        if (a>b){
-            System.out.println("a b'den buyuk");}
-        //b cift ise bu cayilarin carpimi cift olur
+
+        int a = 18;
+        int b = 47;
+
+        // Eger a b'den buyukse "a b'den buyuk" yazdirin
+
+        if ( a > b ){
+            System.out.println("a b'den buyuk");
+        }
 
 
+        // b cift ise , " bu sayilarin carpimi cift olur" yazdirin
 
-        if (b%2==0){
-            System.out.println("bu sayilarin carpimi cift olur");}
-        // a 100 den buyukse ilk sayi cok buyuk yazdirin
-        if (a>100){
+        if ( b % 2 == 0  ){
+            System.out.println("bu sayilarin carpimi cift olur");
+        }
+
+        // a 100'den buyukse "ilk sayi cok buyuk" yazdirin
+
+        if ( a > 100 ){
             System.out.println("ilk sayi cok buyuk");}
 
 

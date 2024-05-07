@@ -5,16 +5,27 @@ import java.util.Scanner;
 public class C04_Scanner_IlkHarfYazdirma {
     public static void main(String[] args) {
 
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("lütfen bir metin giriniz...");
-        //önce 2 yöntemle yapacagiz
-        //1 önce ilk harfi alib sonra tüm metin
-        String metin= scanner.nextLine();
+        // Kullanicidan bir metin isteyip
+        // metnin sadece ilk harfini, buyuk harf olarak yazdirin
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Lutfen bir metin giriniz...");
+
+        // 2 yontemle yapacagiz
+        // 1 - once tum metni alip, sonra ilk harfi yazdiralim
+
+        String metin = scanner.nextLine(); // kullanicidan metni alip kaydettik
         System.out.println(metin.toUpperCase().charAt(0));
-        //kaydettigimiz metni büyük harfe
-        System.out.println("lütfen bir metin daha giriniz");
-        char ilkHarf=scanner.nextLine().toUpperCase().charAt(0);
-        System.out.println("ikinci metin ilk harf");
+        // kaydettigimiz metni, buyuk harfe cevirip, ilk karakteri aldik
+
+
+        // 2.yontem olarak scanner'dan sadece metnin ilk harfini alip kaydedelim
+
+        System.out.println("Lutfen bir metin daha giriniz...");
+
+        char ilkHarf = scanner.nextLine().toUpperCase().charAt(0);
+
+        System.out.println("Ikinci metin ilk harf : " + ilkHarf);
 
 
 

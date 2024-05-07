@@ -18,7 +18,7 @@ public class C02_Scanner_KullanicidanBilgiAlma {
 
         // 2- Kullaniciya ne istedigimizi soylemeliyiz
 
-        System.out.println("Lutfen isminizi giriniz...");
+        System.out.println("Lutfen isminizi giriniz...");//1
 
         // 3- Istedigimiz bilgiyi kaydedebilecegimiz,
         //    istenen bilgiye UYGUN bir variable olusturun,
@@ -32,12 +32,13 @@ public class C02_Scanner_KullanicidanBilgiAlma {
         //            ornegin kullanici "Ali Can Aslan" girerse, next() sadece Ali'yi alir
         // nextLine() ==> Tum satiri alir
 
-        String kullaniciIsmi = scanner.nextLine();
+        String kullaniciIsmi = scanner.nextLine();//2
 
         // 37.satirda kullanicidan bilgiyi alip, kod dunyasina kaydettik
         // bundan sonra bizden istenen islemi yapabiliriz
 
-        System.out.println( "Girilen ismin buyuk harfle yazilisi : "  + kullaniciIsmi.toUpperCase());
+        System.out.println( "Girilen ismin buyuk harfle yazilisi : "
+                + kullaniciIsmi.toUpperCase());//3
 
     }
 }

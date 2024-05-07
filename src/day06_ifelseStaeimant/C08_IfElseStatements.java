@@ -4,22 +4,23 @@ import java.util.Scanner;
 
 public class C08_IfElseStatements {
     public static void main(String[] args) {
-        Scanner scaan=new Scanner(System.in);
+        //Soru 1- Kullanicidan bir ucgenin 3 kenar uzunlugunu alin,
+        //        ucgen eskenar ise “Eskenar ucgen” yazdirin,
+        //        degilse “Eskenar degil” yazdirin.
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Ucgenin kenar uzunluklarini girin...");
+        double kenar1 = scan.nextDouble();
+        double kenar2 = scan.nextDouble();
+        double kenar3 = scan.nextDouble();
 
 
-        System.out.println("ucgenin kenar uzunluklarini giriniz..");
-        double kenar1=scaan.nextDouble();
-        double kenar2=scaan.nextDouble();
-        double kenar3=scaan.nextDouble();
+        if (kenar1 == kenar2 && kenar1 == kenar3 && kenar1 > 0) {
+            System.out.println("Eskenar ucgen");
+        } else {
+            System.out.println("Eskenar ucgen degil");
+        }
+
 
     }
-
-
-    //oru 1- Kullanicidan bir ucgenin 3 kenar uzunlugunu alin, ucgen eskenar ise
-    // “Eskenar ucgen” yazdirin, degilse “Eskenar degil” yazdirin.
-
-
-
-
-
 }

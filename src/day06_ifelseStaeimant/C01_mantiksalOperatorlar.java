@@ -11,7 +11,7 @@ public class C01_mantiksalOperatorlar {
 
         System.out.println(2*a>=b+c&&3*b!=a+c&&b+5<a*c);
 
-        // OR \\ operatoru iyimseldir
+        // OR || operatoru iyimseldir
         // tum sartlar false ise sonuc false
         // sartlardan bir tanesi true ise sonuc true
 

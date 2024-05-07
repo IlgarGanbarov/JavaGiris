@@ -6,25 +6,33 @@ public class C02_Swap {
 
     public static void main(String[] args) {
 
-        Scanner scanner=new Scanner(System.in);
 
-        System.out.println("Lütfen 1.sayiyi giriniz");
+        //Soru 7 (Interview)- Kullanicidan iki sayi alip ikisinin degerlerini degistirin(swap).
 
-        int sayi1=scanner.nextInt();
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("lütfen 2.sayiyi giriniz");
+        System.out.println("Lutfen 1.sayiyi giriniz...");
 
-        int sayi2=scanner.nextInt();
+        int sayi1 = scanner.nextInt();
 
-        int temp=0;
-        temp=sayi1;
+        System.out.println("Lutfen 2.sayiyi giriniz...");
 
-        sayi1=sayi2;
+        int sayi2 = scanner.nextInt();
 
-        sayi2=temp;
+        int temp = 0;
 
-        System.out.println("sayilarin yerini deyisdirdim"+
-                "\nsayi1:"+sayi1+",sayi2:"+sayi2+" oldu.");
+
+        temp = sayi1 ;
+
+
+        sayi1 = sayi2;
+
+
+        sayi2 = temp;
+
+
+        System.out.println("sayilarin yerini degistirdim " +
+                "\nSayi1 : " + sayi1 + ", Sayi2 : " + sayi2 + " oldu.");
 
 
 

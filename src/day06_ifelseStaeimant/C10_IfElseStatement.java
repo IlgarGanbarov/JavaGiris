@@ -5,13 +5,22 @@ import java.util.Scanner;
 public class C10_IfElseStatement {
     public static void main(String[] args) {
 
-        Scanner scan=new Scanner(System.in);
-        System.out.println("lutfen bir karakter giriniz");
-        char girilenkarakter=scan.nextLine().charAt(0);
+        //Soru 5- Kullanicidan bir harf isteyin,
+        //        girilen karakter kucuk harf ise onu buyuk harf olarak yazdirin,
+        //        yoksa girilen karakteri girildigi gibi yazdirin
 
-        if (Character.isLowerCase(girilenkarakter)){
-            System.out.println(Character.toUpperCase(girilenkarakter));}else {
-            System.out.println(girilenkarakter);}
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Lutfen bir karakter giriniz...");
+        char girilenKarakter = scanner.nextLine().charAt(0);
+
+        if ( Character.isLowerCase(girilenKarakter)){
+
+            System.out.println(Character.toUpperCase(girilenKarakter));
+        }else {
+
+            System.out.println(girilenKarakter);
+        }
 
 
 

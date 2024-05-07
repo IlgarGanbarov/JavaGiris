@@ -21,8 +21,7 @@ public class C03_Varargs {
 
         int toplam = 0;
 
-        for (int each : sayilar
-        ) {
+        for (int each : sayilar) {
             toplam+=each;
         }
         System.out.println(toplam);

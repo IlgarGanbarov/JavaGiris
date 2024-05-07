@@ -14,8 +14,9 @@ public class C09_IfElseStatements {
 
         double yas=scan.nextDouble();
         if (yas>=65){
-            System.out.println("emekli ola bilirsin");}else {
-            System.out.println("Emekli olmak icin"+(65-yas)+"calismalisiniz");}
+            System.out.println("emekli ola bilirsin");
+        }else {
+            System.out.println("Emekli olmak icin " +(65-yas)+ " yil daha calismalisiniz");}
 
 
 
