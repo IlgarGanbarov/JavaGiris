@@ -8,6 +8,10 @@ public class C03_NumaraIleSoyisimUpdate extends OgrenciMapClass {
         // verilen numarali ogrencinin soyismini verilen soyisim olarak update edin
         // ornek : 103 numarali ogrencinin soyismini Yilmaz yap
 
+
+        // verilen numarali ogrencinin soyismini verilen soyisim olarak update edin
+        // ornek : 103 numarali ogrencinin soyismini Yilmaz yap
+
         mapeOgrenciEkle();
 
         System.out.println(ogrenciMap);
